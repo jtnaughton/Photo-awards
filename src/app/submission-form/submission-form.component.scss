@@ -3,10 +3,9 @@ body {
   -moz-font-smoothing: grayscale;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen  {
   .ui.container {
-    width: 700px;
-    max-width: 700px;
+    width: 100vh;
   }
 }
 
@@ -16,7 +15,7 @@ body {
 }
 
 .ui.content.container {
-  height: 700px;
+  max-height: 100vh;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -26,12 +25,14 @@ body {
 }
 
 .ui.content.container h1.header {
+  margin-top: 20px;
   font-size: 36px;
+  color: white;
 }
 
 .flex-form {
   label {
-    margin-bottom: 8px;
+    color: white;
   }
 
   input,
@@ -49,7 +50,8 @@ body {
     cursor: pointer;
     border: none;
     border-radius: 4px;
-    margin: 10px;
+    padding-top: 5px;
+    margin-right: 10px;
     min-width: 10px;
   }
 }

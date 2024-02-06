@@ -45,7 +45,7 @@ export class GridDataComponent implements OnInit {
   // Renders images within ag-grid cell
   imageCellRenderer(params: { value: string }): HTMLElement {
     const imgElement = document.createElement('img');
-    imgElement.src = `assets/${params.value}.jpeg`; // image path
+    imgElement.src = `assets/${params.value}.jpg`; // image path
     imgElement.alt = 'Image';
     imgElement.style.width = '50px';
 

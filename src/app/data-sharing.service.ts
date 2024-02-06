@@ -9,7 +9,6 @@ export class DataSharingService {
   public formData$: Observable<any> = this.formDataSubject.asObservable();
 
   updateFormData(formData: any) {
-    debugger;
     this.formDataSubject.next(formData);
   }
 }
