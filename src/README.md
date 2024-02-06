@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Travel Photographer Of The Year Awards
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.16.
@@ -48,3 +49,6 @@ Flow:
 - Enhance type safety by providing object types for properties like formData. Create an interface for formData to describe its structure. This practice improves the chances of detecting bugs and enhances the readability of the application.
 
 - Improve the overall design of the application. Implement consistent use of whitespace, similar to the approach used on the homepage surrounding the landing page image, throughout the rest of the application to enhance UX consistency. Additionally, consider creating a more visually appealing background and color scheme for the form and grid sections.
+=======
+# travel-photo-awards
+>>>>>>> 63c39a388ab4bc6dd634414b65d2a207930a8a5c
