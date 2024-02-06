@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no"
+    />
+    <meta
+      name="description"
+      content="Semantic-UI-Forest, collection of design, themes and templates for Semantic-UI."
+    />
+    <meta name="keywords" content="Semantic-UI, Theme, Design, Template" />
+    <meta name="author" content="PPType" />
+    <meta name="theme-color" content="#ffffff" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      type="text/css"
+    />
+  </head>
+
+
+  <body id="root">
+    <div class="ui inverted vertical center aligned segment">
+      <div class="ui content container">
+        <h1 class="ui inverted header">Submit Your Entry</h1>
+        <!--  SUBMISSION FORM-->
+        <form
+          class="flex-form"
+          [formGroup]="submissionForm"
+          (ngSubmit)="onSubmit()"
+        >
+          <!-- Name -->
+          <label for="name">Name:</label>
+          <input type="text" id="name" formControlName="name" />
+          <div
+            class="errorText"
+            *ngIf="
+              submissionForm.controls.name.touched &&
+              submissionForm.controls.name.invalid
+            "
+          >
+            Name is required.
+          </div>
+
+          <!-- Email -->
+          <label for="email">Email:</label>
+          <input type="text" id="email" formControlName="email" />
+          <div
+            class="errorText"
+            *ngIf="
+              submissionForm.controls.email.touched &&
+              submissionForm.controls.email.invalid
+            "
+            class="error-message"
+          >
+            Email is required.
+          </div>
+          <div
+            class="errorText"
+            *ngIf="submissionForm.get('email')?.hasError('email')"
+          >
+            Please enter a valid email address.
+          </div>
+
+          <!-- Photo -->
+          <label for="photo">Photo:</label>
+          <input type="file" id="photo" formControlName="photo" (change)="onFileSelected($event)"/>
+          <div
+            class="errorText"
+            *ngIf="submissionForm.get('photo')?.hasError('required')"
+          >
+            Please select a photo.
+          </div>
+
+          <!-- Comments -->
+          <label for="comments">Comments:</label>
+          <textarea id="comments" formControlName="comments"></textarea>
+
+          <!-- Submit Button -->
+          <button class="button" type="submit">Submit</button>
+          <button class="button" *ngIf="submittedForm">
+            <a class="button" routerLink="/grid-data"> See The Competition! </a>
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

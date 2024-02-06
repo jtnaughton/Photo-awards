@@ -1,0 +1,61 @@
+.container {
+  position: relative;
+  overflow: hidden;
+}
+
+.backgroundImg {
+  position: relative;
+  text-align: center;
+  color: white; /* Set text color to white or your preferred color */
+}
+
+.backgroundImg img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.content {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Bring to the foreground */
+  text-align: center;
+  align-items: center;
+}
+
+.content h1,
+.content p {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content h1 {
+  font-size: 3em;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.ui.huge.button {
+  background-color: white;
+  color: white;
+  padding: 15px 20px; /* Adjust width and height */
+  font-size: 1em;
+  border-radius: 8px;
+  width: 150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Bring to the foreground */
+  text-align: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.ui.huge.button:hover {
+  text-decoration: none;
+  background-color: grey;
+}
