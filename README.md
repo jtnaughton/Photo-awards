@@ -7,11 +7,13 @@ Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will 
 
 ## Design
 Purpose of the appplication: Provide a place where aspiring travel photographers can enter their work into a prestigious competition to recieve rewards and recognition for their work.
-Notes: I used my own photography for this application from my time spent in South America.
+
+**Notes**: I used my own photography for this application from my time spent in South America.
+
 Flow:
 
 1.	Homepage Requirements:
-•	visually strking
+•	visually striking
 •	simple
 
 ![image](https://github.com/jtnaughton/Photo-awards/assets/80038241/8465b45c-7884-4304-a009-7ce9f24bc1a3)
