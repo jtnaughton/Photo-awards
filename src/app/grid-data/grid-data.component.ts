@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ColDef, GridApi } from 'ag-grid-community';
 import { DataSharingService } from '../data-sharing.service';
+import { ColDef, GridApi } from 'ag-grid-community';
 
 @Component({
   selector: 'app-grid-data',
