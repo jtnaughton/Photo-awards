@@ -47,6 +47,6 @@ separate JSON files and import them into the Grid Component.
 
 •	Enhance type safety by providing object types for properties like formData. Create an interface for formData to describe its structure. This practice improves the chances of detecting bugs and enhances the readability of the application.
 
-•	Improve the overall design of the application. Implement consistent use of whitespace, similar to the approach used on the homepage surrounding the landing page image, throughout the rest of the application to enhance UX consistency. Additionally, consider creating a more visually appealing background and color scheme for the form and grid sections.
+•	Improve the overall design of the application. Implement consistent use of whitespace, similar to the approach used on the homepage surrounding the landing page image, throughout the rest of the application to enhance UX consistency. Additionally, consider creating a more visually appealing background and color scheme for the form and grid sections. There are plenty of alignment issues throughout the app too!
 
 
