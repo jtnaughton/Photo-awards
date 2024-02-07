@@ -36,7 +36,9 @@ o	Display Rows/Columns with a Paginated grid.
  
 ## List of Proposed Improvements
 
-•	Implement functionality to read locally selected image files by the user. Currently, the application does not display these images in the grid. Enhance the application to read the file content and convert it to a format that can be used as a source for an image, such as a base64-encoded data URL.
+•	Transform the design to be responsive. Currently, the use of fixed style attributes such as padding: 10px results in varying ratios depending on the screen size of the device accessing the application. To address this issue, the design must be adjusted to maintain consistent ratios across different screen sizes, ensuring a uniform experience regardless of the monitor used.
+
+- Implement functionality to read locally selected image files by the user. Currently, the application does not display these images in the grid. Enhance the application to read the file content and convert it to a format that can be used as a source for an image, such as a base64-encoded data URL.
 
 •	Enhance the test coverage for the application. Presently, only basic testing exists to confirm the creation of components and services. Expand the test suite to ensure correct data flow and validate the expected execution of functions.
 
@@ -46,4 +48,5 @@ separate JSON files and import them into the Grid Component.
 •	Enhance type safety by providing object types for properties like formData. Create an interface for formData to describe its structure. This practice improves the chances of detecting bugs and enhances the readability of the application.
 
 •	Improve the overall design of the application. Implement consistent use of whitespace, similar to the approach used on the homepage surrounding the landing page image, throughout the rest of the application to enhance UX consistency. Additionally, consider creating a more visually appealing background and color scheme for the form and grid sections.
+
 
